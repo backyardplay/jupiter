@@ -25,8 +25,8 @@ public class ApplicationConfig {
 
     @Bean(name = "dataSource")
     public DataSource dataSource() {
-        String RDS_ENDPOINT = "database-1.csjfr1qcmqxu.us-east-2.rds.amazonaws.com";
-        String USERNAME = "laiproject";
+        String RDS_ENDPOINT = ".rds.amazonaws.com";
+        String USERNAME = "";
         String PASSWORD = "";
         //需要修改红色部分, 保留其他内容,  YOUR_RDS_INSTANCE_ADDRESS,USERNAME,  PASSWORD are information created last lesson
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
